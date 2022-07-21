@@ -92,14 +92,12 @@ class _ImageSearchAppState extends State<ImageSearchApp> {
 
     List<Picture> result = [];
 
-    for (int i = 0; i < hits.length; i++){
+    for(int i=0; i <hits.length; i++){
       Map<String, dynamic> item = hits[i];
 
       Picture picture = Picture.fromJson(item);
 
       result.add(picture);
-
-
     }
 
     return result;
